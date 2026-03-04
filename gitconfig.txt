@@ -1,7 +1,7 @@
 ----------------------------------------------------------
                     CONFIGURANDO O GITHUB
-git config --global user.name Godoy
-git config --global user.email viniciusgodoy.martins@gmail.com
+git config --global user.name joaopedro-dev-sudo
+git config --global user.email pedrosantoaraujo0908@gmail.com
 -----------------------------------------------------------
                    CRIANDO O PROJETO
 npx create-expo-app@latest calculadora --template blank 
