@@ -47,6 +47,33 @@ export default function App() {
           <CalcButton theme={theme} label="÷" variant="op" onPress={() => {}} />
         </View>
 
+        <View style={styles.row}>
+          <CalcButton theme={theme} label="C" variant="neutral" onPress={() => {}} />
+          <CalcButton theme={theme} label="+/-" variant="neutral" onPress={() => {}} />
+          <CalcButton theme={theme} label="%" variant="neutral" onPress={() => {}} />
+          <CalcButton theme={theme} label="÷" variant="op" onPress={() => {}} />
+        </View>
+
+        <View style={styles.row}>
+          <CalcButton theme={theme} label="4" variant="numl" onPress={() => {}} />
+          <CalcButton theme={theme} label="5" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="6" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="-" variant="op" onPress={() => {}} />
+        </View>
+
+        <View style={styles.row}>
+          <CalcButton theme={theme} label="1" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="2/-" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="3" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="÷" variant="op" onPress={() => {}} />
+        </View>
+
+        <View style={styles.row}>
+          <CalcButton theme={theme} label="0" variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="." variant="num" onPress={() => {}} />
+          <CalcButton theme={theme} label="=" variant="op" onPress={() => {}} />
+        </View>
+
       </View>
 
     </View>
