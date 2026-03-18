@@ -10,6 +10,13 @@ export default function App() {
   const [mode, setMode] = useState("dark");
   const theme = themes[mode];
 
+  const engine =useMemo(() => createEngine({locale: "pt-br"}), []);
+  const [state, setState] = useState(engine.initialState());
+
+  function onKey(key) {
+    setState ((prev) => engine.reduce(prev, key));
+  }
+
   return (
     <View style={[styles.container, {backgroundColor: theme.bg}]}>
       <StatusBar barStyle={mode === "dark" ? "light-content" : "dark-content"} />
@@ -41,9 +48,9 @@ export default function App() {
       <View style={styles.pad}>
         {/* Linha 1 */}
         <View style={styles.row}>
-          <CalcButton theme={theme} label="C" variant="neutral" onPress={() => {}} />
-          <CalcButton theme={theme} label="+/-" variant="neutral" onPress={() => {}} />
-          <CalcButton theme={theme} label="%" variant="neutral" onPress={() => {}} />
+          <CalcButton theme={theme} label="C" variant="neutral" onPress={() => onKley {}} />
+          <CalcButton theme={theme} label="+/-" variant="neutral" onPress={() => onKley{("sigan")} />
+          <CalcButton theme={theme} label="%" variant="neutral" onPress={() => {}}  />
           <CalcButton theme={theme} label="÷" variant="op" onPress={() => {}} />
         </View>
 
